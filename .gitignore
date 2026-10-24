@@ -1,0 +1,19 @@
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temporary files
+*.log
+*.tmp
+cookie.txt
+
+# Dependencies (not expected for this project)
+vendor/
+node_modules/
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
