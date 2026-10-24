@@ -1,0 +1,99 @@
+
+:root {
+    --primary: #173b67;
+    --primary-dark: #102b4c;
+    --background: #f4f7fb;
+    --surface: #ffffff;
+    --text: #1f2937;
+    --muted: #64748b;
+    --border: #dbe3ed;
+    --success: #15803d;
+    --danger: #b91c1c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.page-container {
+    width: min(1200px, 94%);
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.form-group {
+    display: grid;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.btn-primary {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+@media (max-width: 600px) {
+    .page-container {
+        width: 92%;
+        padding: 16px 0;
+    }
+
+    .card {
+        padding: 14px;
+    }
+}
