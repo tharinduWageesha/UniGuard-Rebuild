@@ -24,3 +24,13 @@
 ## Status
 
 Initial project setup.
+
+
+
+## Database Configuration
+
+- Database name: `un_db`
+- Database server: MySQL via XAMPP
+- Database access: PHP PDO
+- Initial tables: `csos`, `jsos`, `oics`
+
